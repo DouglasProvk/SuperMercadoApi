@@ -1,0 +1,48 @@
+:root {
+  --primary-color: #1abc9c;
+  --primary-dark: #16a085;
+  --primary-light: #48d1b8;
+  --secondary-color: #3498db;
+  --success-color: #27ae60;
+  --warning-color: #f39c12;
+  --error-color: #e74c3c;
+  --bg-color: #f5f5f5;
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --border-color: #ecf0f1;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small overrides to mimic SuperGest?o style */
+:root {
+  --primary: #1abc9c;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.app-shell {
+  min-height: 100%;
+  background-color: #f6f6f6;
+}
+
+.sidebar-brand {
+  background: var(--primary);
+  color: white;
+}
+
+.kpi-card {
+  @apply bg-white rounded-lg shadow-sm p-4;
+}
+
+.alerts-card {
+  @apply bg-white rounded-lg shadow-sm p-4;
+}
+
+/* small scrollbar tweak */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 8px; }
